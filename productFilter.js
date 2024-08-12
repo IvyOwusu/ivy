@@ -5,6 +5,7 @@ const emptyFilterState = document.querySelector("option[value=''");
 
 // ensure filter is at default state
 emptyFilterState.textContent = "Add filter";
+filter.value = "";
 
 filter.addEventListener("change", (e) => {
   // console.log(e.target.value);
