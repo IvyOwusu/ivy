@@ -7179,6 +7179,8 @@ a.magnific-popup:hover .overlay {
 }
 .contact-information .social-links {
   font-size: 1.3em;
+  display: flex;
+  gap: 3rem;
 }
 .contact-form input,
 .contact-form textarea {
@@ -7431,6 +7433,12 @@ a.magnific-popup:hover .overlay {
 
 .about-text p {
   font-size: 1.1rem;
+}
+
+.contact-detail {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: repeat(auto-fill, 17rem);
 }
 
 @media screen and (min-width: 800px) {

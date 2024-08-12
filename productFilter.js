@@ -1,16 +1,19 @@
 const filter = document.querySelector("#pfilter");
 
+filter.addEventListener("change", (e) => {
+  showFiltered(e.target.value);
+});
+
+const queries = new URLSearchParams(document.location.search);
+const filterQuery = queries.get("filter");
+
 const sections = document.querySelectorAll("[data-name]");
 const emptyFilterState = document.querySelector("option[value=''");
 
 // ensure filter is at default state
 emptyFilterState.textContent = "Add filter";
-filter.value = "";
-
-filter.addEventListener("change", (e) => {
-  // console.log(e.target.value);
-  showFiltered(e.target.value);
-});
+filter.value = filterQuery ?? "";
+filter.dispatchEvent(new Event("change"));
 
 function showFiltered(sectionName) {
   sections.forEach((section) => {
