@@ -1,11 +1,10 @@
 const filter = document.querySelector("#pfilter");
 
-// const menSection = document.querySelector("#section-men");
-// const womenSection = document.querySelector("#section-women");
-// const unisexSection = document.querySelector("#section-unisex");
-
 const sections = document.querySelectorAll("[data-name]");
 const emptyFilterState = document.querySelector("option[value=''");
+
+// ensure filter is at default state
+emptyFilterState.textContent = "Add filter";
 
 filter.addEventListener("change", (e) => {
   // console.log(e.target.value);
