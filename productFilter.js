@@ -30,3 +30,15 @@ function showFiltered(sectionName) {
     }
   });
 }
+
+// fix in the other links
+const products = document.querySelectorAll(".product-item");
+Array.from(products).forEach((product) => {
+  const name = product.querySelector("h5").textContent.trim();
+
+  const linkTags = product.querySelectorAll('[data-use="whatsapp"]');
+  Array.from(linkTags).forEach((tag) => {
+    tag.href = `
+   https://wa.me/+233503946044?text=Hi%20there%20I%20would%20like%20to%20place%20an%20order%20for%20the%20perfume%20which%20has%20the%20name:%20${name}`;
+  });
+});
