@@ -2,327 +2,344 @@
 <html>
 
 <head>
-    <title>The Decadent Cake Lady</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+  <title>The Decadent Cake Lady</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
-    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="logo.css">
-    <link rel="stylesheet" href="products.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="logo.css">
+
+  <link rel="stylesheet" href="products.css">
+
+
+  <script defer src="./productFilter.js"></script>
 </head>
 
 <body>
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg col-md-12">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <img class="logo" src="images/ESSENCE LOGO.png" alt="logo">
+            </a>
+          </div>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
+          </button>
+          <div class="navbar-collapse collapse" id="slide-navbar-collapse">
+            <ul class="navbar-nav list-inline text-uppercase">
+              <li class="nav-item text-hover"><a href="index.html" class="nav-link" data-effect="Home">Home</a></li>
+              <li class="nav-item text-hover active"><a href="product.html" class="nav-link" data-effect="Shop">Shop</a>
+              </li>
+              <li class="nav-item text-hover "><a href="about.html" class="nav-link" data-effect="About Us">About
+                  us</a></li>
+              <li class="nav-item text-hover"><a href="contact.html" class="nav-link" data-effect="Contact">Contact
+                  us</a></li>
 
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu">
+                  <li><a href="about.html" class="dropdown-item">About us</a></li>
+                  <li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
+                  <li><a href="contact.html" class="dropdown-item">Contact us</a></li>
+                  <li><a href="product.html" class="dropdown-item">Shop</a></li>
+                  <li><a href="single-product.html" class="dropdown-item">Single Product</a></li>
+                </ul>
+              </li>
 
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg col-md-12">
-                    <div class="navbar-brand">
-                        <a href="index.html">
-                            <img class="logo" src="images/ESSENCE LOGO.png" alt="logo">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                        data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
-                    </button>
-                    <div class="navbar-collapse collapse" id="slide-navbar-collapse">
-                        <ul class="navbar-nav list-inline text-uppercase">
-                            <li class="nav-item text-hover"><a href="index.html" class="nav-link"
-                                    data-effect="Home">Home</a></li>
-                            <li class="nav-item text-hover active"><a href="shop.html" class="nav-link"
-                                    data-effect="About Us">Shop</a></li>
-                            <li class="nav-item text-hover"><a href="about.html" class="nav-link"
-                                    data-effect="About Us">About us</a></li>
-                            <li class="nav-item text-hover"><a href="contact.html" class="nav-link"
-                                    data-effect="Contact">Contact us</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="  container">
+      <div class="product-filter ">
+        <select name="filter" id="pfilter" class="">
+          <option value="">Add filter</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="unisex">Unisex</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="our-team bg-sand padding-large">
+    <div class="container" id="section-men" data-name="men">
+      <header class="section-header   mb-4">
+        <h2 class="section-title text-center">
+          Men's Section
+        </h2>
+      </header>
+      <section class="row">
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/strawberries and cream dream.html" class="product-image"><img
+              src="images/Males/Liam-Blue Shine.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/strawberries and cream dream.html">Liam Blue Shine
+              </a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 250/375/500</span> -->
+          </div>
         </div>
-    </header>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/double chocolate cake .html" class="product-image"><img
+              src="images/Males/RA'ED-Gold LUXE.jpg"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/double chocolate cake .html">Ra'ed-Gold Luxe </a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 175/310</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/lemon curd cake.html" class="product-image"><img
+              src="./images/Males/Club de nuit.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/lemon curd cake.html">Club de nuit</a></h5>
+            <p>Armaf</p>
+            <!-- <span class="price colored">GH₵ 175/310</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Vanila & Salted Caramel.html" class="product-image"><img
+              src="./images/Males/Eau de Parfum.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/Vanila & Salted Caramel.html">Eau de Parfum</a>
+            </h5>
+            <p>Yves Saint Laurent</p>
+            <!-- <span class="price colored">GH₵ 250/350</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Victoria Sponge.html" class="product-image"><img src="images/Males/TAMIMA.jpg"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/Victoria Sponge.html">TAMIMA EDP</a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 120/215/315</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Lemon and Raspberry.html" class="product-image"><img src="images/Males/PROFONDO.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/Lemon and Raspberry.html">Acqua Di GIO - PROFONDO</a></h5>
+            <p>GIORGIO ARMANI</p>
+            <!-- <span class="price colored">GH₵ 250/375</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Oreo cream dream.html" class="product-image"><img
+              src="images/Males/Y Eau de Toilette .png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/Oreo cream dream.html">Y Eau de Toilette</a></h5>
+            <p>Yves Saint Laurent</p>
+            <!-- <span class="price colored">GH₵ 350/450</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/whitechocolateoverload.html" class="product-image"><img
+              src="images/Males/POUR HOMME.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="./products/whitechocolateoverload.html">Acqua Di GIO - POUR HOMME</a>
+            </h5>
+            <p>GIORGIO ARMANI</p>
+            <!-- <span class="price colored">GH₵ 315/450</span> -->
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <section class="our-team bg-sand padding-large">
-        <div class="container">
-            <header class="section-header   mb-4">
-                <h2 class="section-title text-center ">
-                    Men's Section
-                </h2>
-            </header>
-            <section class="row">
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/strawberries and cream dream.html" class="product-image"><img
-                            src="images/Males/Liam-Blue Shine.png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/strawberries and cream dream.html">Liam Blue Shine
-                                </a></h5>
-                        <p>Lattafa</p>
-                        <!-- <span class="price colored">GH₵ 250/375/500</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/double chocolate cake .html" class="product-image"><img
-                            src="images/Males/RA'ED-Gold LUXE.jpg"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/double chocolate cake .html">Ra'ed-Gold Luxe </a></h5>
-                        <p>Lattafa</p>
-                        <!-- <span class="price colored">GH₵ 175/310</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/lemon curd cake.html" class="product-image"><img
-                            src="./images/Males/Club de nuit.png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/lemon curd cake.html">Club de nuit</a></h5>
-                        <p>Armaf</p>
-                        <!-- <span class="price colored">GH₵ 175/310</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/Vanila & Salted Caramel.html" class="product-image"><img
-                            src="./images/Males/Eau de Parfum.png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/Vanila & Salted Caramel.html">Eau de Parfum</a>
-                        </h5>
-                         <p>Yves Saint Laurent</p>
-                        <!-- <span class="price colored">GH₵ 250/350</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/Victoria Sponge.html" class="product-image"><img
-                            src="images/Males/TAMIMA.jpg"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/Victoria Sponge.html">TAMIMA EDP</a></h5>
-                        <p>Lattafa</p>
-                        <!-- <span class="price colored">GH₵ 120/215/315</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/Lemon and Raspberry.html" class="product-image"><img
-                            src="images/Males/PROFONDO.png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/Lemon and Raspberry.html">Acqua Di GIO - PROFONDO</a></h5>
-                        <p>GIORGIO ARMANI</p>
-                        <!-- <span class="price colored">GH₵ 250/375</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/Oreo cream dream.html" class="product-image"><img
-                            src="images/Males/Y Eau de Toilette .png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/Oreo cream dream.html">Y Eau de Toilette</a></h5>
-                        <p>Yves Saint Laurent</p>
-                        <!-- <span class="price colored">GH₵ 350/450</span> -->
-                    </div>
-                </div>
-                <div class="product-item col-md-3 pb-4">
-                    <a href="./products/whitechocolateoverload.html" class="product-image"><img
-                            src="images/Males/POUR HOMME.png"></a>
-                    <div class="text-comtent text-center">
-                        <h5 class="pt-4"><a href="./products/whitechocolateoverload.html">Acqua Di GIO - POUR HOMME</a>
-                        </h5>
-                        <p>GIORGIO ARMANI</p>
-                        <!-- <span class="price colored">GH₵ 315/450</span> -->
-                    </div>
-                </div>
-            </section>
+    <div class="container" id="section-women" data-name="women">
+      <header class="section-header   mb-4">
+        <h2 class="section-title text-center ">
+          Women's Section
+        </h2>
+      </header><!-- SINGLE LAYER & LOAF CAKES -->
+      <section class="row">
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/tresleches.html" class="product-image"><img src="images/females/MY WAY.jpg"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/tresleches.html">MY WAY</a></h5>
+            <p>GIORGIO ARMANI</p>
+            <!-- <span class="price colored">GH₵ 175/215/275</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/berry chantilly cake.html" class="product-image"><img
+              src="images/females/Zara femme.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/berry chantilly cake.html"> FEMME</a></h5>
+            <p>ZARA</p>
+            <!-- <span class="price colored">GH₵ 375</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/lemon drizzle loaf.html" class="product-image"><img
+              src="images/females/Mohra Silky Rose.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/lemon drizzle loaf.html">Mohra Silky Rose</a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 100</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Madeira loaf.html" class="product-image"><img src="images/females/Zara Nuit.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">Nuit</a></h5>
+            <p>ZARA</p>
+            <!-- <span class="price colored">GH₵ 100</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Caribbean ginger loaf.html" class="product-image"><img
+              src="images/females/Ophylia.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">Ophylia Legend</a></h5>
+            <p> Frangrance World</p>
+            <!-- <span class="price colored">GH₵ 90</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Jammy coconut loaf.html" class="product-image"><img src="images/females/Quimmah.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">Quimmah </a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 120</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Banana and chocolate chip loaf.html" class="product-image"><img
+              src="images/females/Love is love.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">Love is Love</a></h5>
+            <p>Dolce & Gabanna </p>
+            <!-- <span class="price colored">GH₵ 120</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Toffee apple loaf cake.html" class="product-image"><img
+              src="images/females/My Burberry.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">My Burberry</a></h5>
+            <p>BURBERRY</p>
+            <!-- <span class="price colored">GH₵ 150</span> -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container" id="section-unisex " data-name="unisex">
+      <header class="section-header   mb-4">
+        <h2 class="section-title text-center ">
+          Unisex
+        </h2>
+      </header>
+      <section class="row unisex">
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/tresleches.html" class="product-image"><img src="images/unisex/Khamram.jpeg"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/tresleches.html">Khamram</a></h5>
+            <p>Lattafa</p>
+            <!-- <span class="price colored">GH₵ 175/215/275</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/berry chantilly cake.html" class="product-image"><img
+              src="images/unisex/Aqua Universalis.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/berry chantilly cake.html">Aqua Universalis</a></h5>
+            <p>Maison Francis Kurkdjan</p>
+            <!-- <span class="price colored">GH₵ 375</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/lemon drizzle loaf.html" class="product-image"><img src="images/unisex/Mousuf.jpg"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="products/lemon drizzle loaf.html">Mousuf</a></h5>
+            <p>Ard al Zaafaran</p>
+            <!-- <span class="price colored">GH₵ 100</span> -->
+          </div>
+        </div>
+        <div class="product-item col-md-3 pb-4">
+          <a href="./products/Madeira loaf.html" class="product-image"><img src="images/unisex/Baccarat.png"></a>
+          <div class="text-comtent text-center">
+            <h5 class="pt-4"><a href="single-product.html">Baccarat Rouge 540</a></h5>
+            <p>Maison Francis Kurkdjan</p>
+            <!-- <span class="price colored">GH₵ 100</span> -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="wrap flex-container">
 
 
-            <div>
-                <header class="section-header   mb-4">
-                    <h2 class="section-title text-center ">
-                        Women's Section
-                    </h2>
-                </header><!-- SINGLE LAYER & LOAF CAKES -->
-                <section class="row">
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/tresleches.html" class="product-image"><img src="images/females/MY WAY.jpg"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/tresleches.html">MY WAY</a></h5>
-                            <p>GIORGIO ARMANI</p>
-                            <!-- <span class="price colored">GH₵ 175/215/275</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/berry chantilly cake.html" class="product-image"><img
-                                src="images/females/Zara femme.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/berry chantilly cake.html"> FEMME</a></h5>
-                            <p>ZARA</p>
-                            <!-- <span class="price colored">GH₵ 375</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/lemon drizzle loaf.html" class="product-image"><img
-                                src="images/females/Mohra Silky Rose.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/lemon drizzle loaf.html">Mohra Silky Rose</a></h5>
-                            <p>Lattafa</p>
-                            <!-- <span class="price colored">GH₵ 100</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Madeira loaf.html" class="product-image"><img
-                                src="images/females/Zara Nuit.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">Nuit</a></h5>
-                            <p>ZARA</p>
-                            <!-- <span class="price colored">GH₵ 100</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Caribbean ginger loaf.html" class="product-image"><img
-                                src="images/females/Ophylia.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">Ophylia Legend</a></h5>
-                            <p> Frangrance World</p>
-                            <!-- <span class="price colored">GH₵ 90</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Jammy coconut loaf.html" class="product-image"><img
-                                src="images/females/Quimmah.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">Quimmah </a></h5>
-                            <p>Lattafa</p>
-                            <!-- <span class="price colored">GH₵ 120</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Banana and chocolate chip loaf.html" class="product-image"><img
-                                src="images/females/Love is love.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">Love is Love</a></h5>
-                            <p>Dolce & Gabanna </p>
-                            <!-- <span class="price colored">GH₵ 120</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Toffee apple loaf cake.html" class="product-image"><img
-                                src="images/females/My Burberry.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">My Burberry</a></h5>
-                            <p>BURBERRY</p>
-                            <!-- <span class="price colored">GH₵ 150</span> -->
-                        </div>
-                    </div>
-                </section>
+
+            <div class="col-md-5 mr-5 mb-3 mx-auto">
+              <div class="widget-newsletter mb-5">
+                <h4 class="widget-title">Subscribe To Our Newletter</h4>
+                <div class="newsletter-button d-flex">
+                  <input type="text" name="Subscribe" placeholder="Your Email Address">
+                  <button class="btn-hvr-effects">Subscribe</button>
+                </div>
+
+              </div>
+              <!--widget-newsletter-->
+
+              <div class="working-schedule">
+                <h4 class="widget-title">Our Work Time</h4>
+                <div class="time-list d-flex">
+                  <ul class="list-unstyled mr-5">
+                    <li>Monday - Friday</li>
+                    <li>10:30am - 7:30 pm</li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li>Saturday - Sunday</li>
+                    <li>10:30am - 7:00 pm</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <div>
-                <header class="section-header   mb-4">
-                    <h2 class="section-title text-center ">
-                        Unisex
-                    </h2>
-                </header>
-                <section class="row unisex">
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/tresleches.html" class="product-image"><img src="images/unisex/Khamram.jpeg"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/tresleches.html">Khamram</a></h5>
-                            <p>Lattafa</p>
-                            <!-- <span class="price colored">GH₵ 175/215/275</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/berry chantilly cake.html" class="product-image"><img
-                                src="images/unisex/Aqua Universalis.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/berry chantilly cake.html">Aqua Universalis</a></h5>
-                            <p>Maison Francis Kurkdjan</p>
-                            <!-- <span class="price colored">GH₵ 375</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/lemon drizzle loaf.html" class="product-image"><img
-                                src="images/unisex/Mousuf.jpg"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="products/lemon drizzle loaf.html">Mousuf</a></h5>
-                            <p>Ard al Zaafaran</p>
-                            <!-- <span class="price colored">GH₵ 100</span> -->
-                        </div>
-                    </div>
-                    <div class="product-item col-md-3 pb-4">
-                        <a href="./products/Madeira loaf.html" class="product-image"><img
-                                src="images/unisex/Baccarat.png"></a>
-                        <div class="text-comtent text-center">
-                            <h5 class="pt-4"><a href="single-product.html">Baccarat Rouge 540</a></h5>
-                            <p>Maison Francis Kurkdjan</p>
-                            <!-- <span class="price colored">GH₵ 100</span> -->
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="wrap flex-container">
+            <!--col-md-4-->
 
 
 
-                            <div class="col-md-5 mr-5 mb-3 mx-auto">
-                                <div class="widget-newsletter mb-5">
-                                    <h4 class="widget-title">Subscribe To Our Newletter</h4>
-                                    <div class="newsletter-button d-flex">
-                                        <input type="text" name="Subscribe" placeholder="Your Email Address">
-                                        <button class="btn-hvr-effects">Subscribe</button>
-                                    </div>
+          </div>
+          <!--content-->
 
-                                </div>
-                                <!--widget-newsletter-->
-
-                                <div class="working-schedule">
-                                    <h4 class="widget-title">Our Work Time</h4>
-                                    <div class="time-list d-flex">
-                                        <ul class="list-unstyled mr-5">
-                                            <li>Monday - Friday</li>
-                                            <li>10:30am - 7:30 pm</li>
-                                        </ul>
-                                        <ul class="list-unstyled">
-                                            <li>Saturday - Sunday</li>
-                                            <li>10:30am - 7:00 pm</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--col-md-4-->
+        </div>
+      </div>
+    </footer>
 
 
-
-                        </div>
-                        <!--content-->
-
-                    </div>
-                </div>
-            </footer>
-
-            <script src="js/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-            <script type="text/javascript" src="js/slick.min.js"></script>
-            <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-            <script type="text/javascript" src="js/script.js"></script>
-            <script src="./js/cdn.jsdelivr.net_npm_jquery@3.5.1_dist_jquery.slim.min.js"></script>
-            <script src="./js/cdn.jsdelivr.net_npm_bootstrap@4.6.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="./js/cdn.jsdelivr.net_npm_jquery@3.5.1_dist_jquery.slim.min.js"></script>
+    <script src="./js/cdn.jsdelivr.net_npm_bootstrap@4.6.2_dist_js_bootstrap.bundle.min.js"></script>
 
 </body>
 
