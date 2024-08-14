@@ -6954,33 +6954,23 @@ a.nav-link {
   background-size: cover;
   padding: 2rem 0;
 }
-.special-items .item-content {
-  display: flex;
-  /* height: 600px; */
-  align-items: center;
-}
-special-items_content {
-  display: grid;
-  gap: 2rem;
-}
-*/ 
-/* -- Special Chocolate Section
---------------------------------------------------------------*/
-/* .special-items{
-  background: url(  images\special-item.jpg) no-repeat;
-  background-size: cover;
-  padding: 2rem 0;
-}
 .special-items_content {
-  display: grid;
-  gap: 2rem;
+  text-align: center;
+  width: 90%;
+  margin-inline: auto;
 }
-.special-items .item-content {
-    display: flex;
-    min-height: 600px;
-    align-items: center;
-} */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
 
+@media screen and (max-width: 750px) {
+  .grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    justify-content: center;
+  }
+}
 
 /* 11. Magnific Popup
 --------------------------------------------------------------*/
@@ -7358,9 +7348,16 @@ a.magnific-popup:hover .overlay {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-inline: auto;
-  width: 72%;
-  gap: 4rem;
+  width: 88%;
+  gap: 2rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 0.4fr));
+    justify-content: space-between;
+  }
 }
 
 /* for button */
@@ -7374,12 +7371,6 @@ a.magnific-popup:hover .overlay {
   display: block;
   padding: 1rem 3rem;
   border: 1px solid gray;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
 }
 
 .wrapper {
